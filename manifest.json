@@ -1,0 +1,44 @@
+{
+    "name": "Umbrella IT Support",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "Umbrella IT Support Toolset",
+    "icons": {
+        "16": "icons/umbrella16x16.png",
+        "32": "icons/umbrella32x32.png",
+        "48": "icons/umbrella48x48.png",
+        "128": "icons/umbrella128x128.png"
+    },
+    "action": {
+        "default_popup": "newPopup/index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./routes/all.js"]
+        },
+        {
+            "matches": ["https://ww14.autotask.net/Mvc/ServiceDesk/TicketDetail.mvc*"],
+            "js": ["./routes/AutoTaskTicket.js"]
+        },
+        {
+            "matches": ["https://ww14.autotask.net/Mvc/Framework/Navigation.mvc/Landing*"],
+            "js": ["./routes/AutoTaskDashboard.js"]
+        },
+        {
+            "matches": ["https://www.att.com/outages/*"],
+            "js": ["./routes/AttOutage.js"]
+        },
+        {
+            "matches": ["https://www.xfinity.com/support/status-map*"],
+            "js": ["./routes/XfinityOutage.js"]
+        },
+        {
+            "matches": ["https://unifi.ui.com/7.3.83.0/unifi/site/*"],
+            "js": ["./routes/UnifiSwitchView.js"]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../newPopup/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+    <title>Umbrella IT Extension</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            Umbrella IT Solutions
+        </div>
+        <div class="content">
+
+            <div id="logged-in-section" style="display: none;">
+                <div class="section">
+                    <p class="title">Password Generator</p>
+                    <div class="aux-button-group">
+                        <div class="output">
+                            !$RandomPasswordThird777&$!
+                        </div>
+                        <div class="group-button">
+                            <p>Generate</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="section">
+                    <p class="title">Global Clipboard</p>
+                    <div class="aux-button-group">
+                        <input type="text" class="output global-cb-input" id="global-cb-key" placeholder="Key:">
+                        <input type="text" class="output global-cb-input" id="global-cb-value" placeholder="Value:">
+                        <!-- <div class="output">
+                            Something to Copy
+                        </div> -->
+                        <div class="group-button">
+                            <p>Add</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="section">
+                    <p class="title">Delete Old Datto Alerts</p>
+                    <div class="multi-button-group">
+                        <div class="multi-button-group-button">
+                            <p>Get Count</p>
+                        </div>
+                        <div class="multi-button-group-button">
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="main-button">
+                    Logout
+                </div>
+            </div>
+
+            <div id="logged-out-section" style="display:block;">
+    
+                <div class="section">
+                    <p class="title">Add API Key</p>
+                    <div class="aux-button-group">
+                        <input type="text" class="output" id="api-key-input" placeholder="API Key:">
+                        <!-- <div class="output">
+                            Something to Copy
+                        </div> -->
+                        <div class="group-button">
+                            <p>Authenticate</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- <div class="main-button">
+                    Create API Key
+                </div> -->
+
+            </div>
+            
+
+            <div class="spacer"></div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

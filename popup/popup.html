@@ -1,0 +1,39 @@
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="popup.css">
+        <title>Umbrella IT Solutions</title>
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">MDKTK5ZUUVPA-1617414308-2449</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">9273a907-9a1c-4ee8-8aca-453675df4d42</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://umbrellaitgroup.sharepoint.com/sites/DocumentCenter/_layouts/15/DocIdRedir.aspx?ID=MDKTK5ZUUVPA-1617414308-2449, MDKTK5ZUUVPA-1617414308-2449</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    <body>
+        <div class="container">
+            <h4 class="title">
+                Umbrella IT Solutions
+            </h4>
+
+            <!-- Authenticated -->
+                <!-- Logout -->
+                <form id="deleteKeyButton" style="display:none">
+                    <input type="submit" class="main-button" value="Delete API Key">
+                </form>
+
+
+            <!-- Not Authenticated -->
+                <!-- Add API Key Form -->
+                <form id="apiKeyForm" style="display:none">
+                    <label for="fname">API Key:</label><br>
+                    <input type="password" id="apiKey" name="apiKey"><br>
+                    <input type="submit" class="main-button" value="Add API Key">
+                </form>
+
+        </div>
+        <script type="module" src="popup.js"></script>
+    </body>
+</html>
